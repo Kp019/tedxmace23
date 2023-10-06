@@ -12,9 +12,10 @@ function Footer() {
       <div className='img_container'>      
         <img alt='' className='absolute'></img>
       </div>
+      <div className='absolute rounded-full footer-grad'></div>
       <div className='contact flex justify-center gap-20 pt-52 pb-40'>
       
-      <div className=''>
+      <div className='z-50'>
         <h1 className='text-white text-xl'>LETS MEET AT THE<br/> <span className='text-red-600 font-bold text-8xl tracking-widest'>VENUE</span></h1>
         <div className='pt-10'>
           <div  className='text-white flex flex-row align-middle gap-5 py-5'>
@@ -36,34 +37,36 @@ function Footer() {
         </div>
       </div>
       <div className='z-10'>
-      <iframe className='rounded-xl' title='mps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5522076133775!2d76.61551147848766!3d10.053760664410298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e6154a2133e5%3A0x2c26b2d532bb30ea!2sMar%20Athanasius%20College%20of%20Engineering%20-%20Kothamangalam!5e0!3m2!1sen!2sin!4v1696482319402!5m2!1sen!2sin" width="600" height="450"  loading="lazy"></iframe>
+      <iframe className='rounded-xl' title='mps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.5522076133775!2d76.61551147848766!3d10.053760664410298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b07e6154a2133e5%3A0x2c26b2d532bb30ea!2sMar%20Athanasius%20College%20of%20Engineering%20-%20Kothamangalam!5e0!3m2!1sen!2sin!4v1696482319402!5m2!1sen!2sin" width="600" height="400"  loading="lazy"></iframe>
       </div>
     </div>
-    <div className='pb-10 mx-52'>
+    <div className='pb-10 mx-52 overflow-hidden z-10'>
       <div className='text-white mb-5 mx-5'>
         <div className='text-3xl'>
           <p>TEDxMACE</p>
-          <div className='text-sm flex gap-5 mt-3'>
+          <div className='text-sm flex gap-5 mt-3 z-10'>
             <BsInstagram></BsInstagram>
             <BsTwitter></BsTwitter>
             <BsFacebook></BsFacebook>
             <BsLinkedin></BsLinkedin>
           </div>
         </div>
-        <div className='flex justify-end gap-5'>
+        <div className='flex justify-end gap-5 z-10'>
           <p>Home</p>
           <p>About</p>
           <p>Ambassador</p>
           <p>contact</p>
         </div>
       </div>
-      <div className='flex justify-center'>
+      <div className='flex justify-center z-10'>
         <div className='footer-line'></div>
       </div>
-      <div className='flex justify-center text-center'>
+      <div className='flex justify-center text-center z-10'>
         <p className='text-white'> ©Copyright TEDxMACE. All Rights Reserved
         <br/>Made with react and tailwind by <span className='text-red-600'>Krishnaprasad</span></p>
       </div>
+      
+      <div className='absolute rounded-full footer-grad bottom-0 right-0'></div>
     </div>
     </div>
   )
