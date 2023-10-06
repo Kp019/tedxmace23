@@ -58,11 +58,11 @@ const people = [
 function Speakers() {
   return (
     <div className='mx-5 sm:mx-16 lg:mx-48 '>
-        <h3 className='flex justify-center text-white text-2xl'>Speakers</h3>
+        <h3 className='flex justify-center text-white text-5xl'>SPEAKERS</h3>
         <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center m-3">
         {people.map((person) => (
           <li key={person.email} className=" group relative flex flex-col m-5 bg-slate-900 rounded-md overflow-hidden ">
-            <img className="h-50 w-50 scale-125 rounded-md group-hover:scale-100 group-hover:duration-200" src={person.image} alt="" />
+            <img className=" h-72 w-50 scale-125 rounded-md group-hover:scale-100 group-hover:duration-200" src={person.image} alt="" />
             <svg className="h-5 w-5 text-white absolute right-0 z-10 m-2 group-hover:text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
             </svg>
