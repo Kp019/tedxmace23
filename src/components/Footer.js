@@ -8,14 +8,14 @@ import {BsInstagram, BsTwitter, BsFacebook, BsLinkedin} from 'react-icons/bs';
 
 function Footer() {
   return (
-    <div className='relative'>
+    <div id='footer' className='relative'>
       <div className='img_container'>      
         <img alt='' className='absolute'></img>
       </div>
       <div className='absolute rounded-full footer-grad'></div>
       <div className='contact flex justify-center gap-20 pt-52 pb-40'>
       
-      <div className='z-50'>
+      <div className='z-20'>
         <h1 className='text-white text-xl'>LETS MEET AT THE<br/> <span className='text-red-600 font-bold text-8xl tracking-widest'>VENUE</span></h1>
         <div className='pt-10'>
           <div  className='text-white flex flex-row align-middle gap-5 py-5'>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Hero() {
   return (
-    <div className='w-full h-96 bg-black'>
+    <div id='hero' className='w-full h-96 bg-black text-white text-5xl p-52'>
       tedxmace
     </div>
   )

@@ -1,11 +1,3 @@
-.triangle{
-    position: absolute;
-    border-right: 500px solid #ff0000;
-    border-bottom:500px solid transparent;   
-    display: flex;
-    justify-content: center;
-}
-
 .about-angled{
     -webkit-clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
     clip-path: polygon(0 8%, 100% 0, 100% 92%, 0 100%);
@@ -41,9 +33,32 @@
 }
 
 .footer-grad{
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     background-image: linear-gradient(90deg, rgba(191, 0, 0, 0.873) 0%, rgba(255, 136, 0, 0.763) 100%);
     filter: blur(200px);
     z-index: 0;
+}
+
+.speaker-grad{
+    width: 250px;
+    height: 250px;
+    background-image: linear-gradient(90deg, rgba(191, 0, 0, 0.873) 0%, rgba(255, 136, 0, 0.763) 100%);
+    z-index: -10;
+    filter: blur(100px);
+}
+
+.speaker-card:hover .speaker-grad{
+    transform: rotate(180deg);
+    transition-duration: 500ms;
+}
+
+.card-content-container{
+    background-color: rgb(31, 31, 31);
+}
+.card-content-container .speaker-icon-container{
+    position: absolute;
+    font-size: 25px;
+    color: #ff000076;
+    right: 0;
 }

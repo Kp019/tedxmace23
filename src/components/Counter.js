@@ -63,53 +63,55 @@ const Timer3 = () => {
     startCountDown();
   }, [startCountDown]);
   return (
-    <div className="bg-[#000000] my-40">
-      <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
-        <div className="flex justify-center gap-3 sm:gap-8">
-          <div className="flex flex-col gap-5 relative">
-            <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-center items-center bg-[#212121] rounded-lg">
+    <div className="my-40">
+      <div className="flex flex-col items-center justify-center w-full h-full  sm:gap-16">
+        <div className="border-2 border-gray-700 px-10 pb-8 pt-2 rounded-2xl border-b-8 border-b-red-600">
+        <div className="flex justify-center sm:gap-8 ">
+          <div className="flex flex-col relative">
+            <div className="h-10 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-24 flex justify-center items-center rounded-lg">
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#ffffff]">
                 {countDownTime?.days}
               </span>
 
             </div>
             <span className="text-[#ffffff] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.days == 1 ? "Day" : "Days"}
+              {countDownTime?.days === 1 ? "Day" : "Days"}
             </span>
           </div>
-          <div className="flex flex-col gap-5 relative">
-            <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-center items-center bg-[#212121] rounded-lg">
+          <div className="flex flex-col relative">
+            <div className="h-10 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-24 flex justify-center items-center rounded-lg">
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#ffffff]">
                 {countDownTime?.hours}
               </span>
 
             </div>
             <span className="text-[#ffffff] text-xs sm:text-2xl text-center font-medium">
-              {countDownTime?.hours == 1 ? "Hour" : "Hours"}
+              {countDownTime?.hours === 1 ? "Hour" : "Hours"}
             </span>
           </div>
-          <div className="flex flex-col gap-5 relative">
-            <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-center items-center bg-[#212121] rounded-lg">
+          <div className="flex flex-col relative">
+            <div className="h-10 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-24 flex justify-center items-center rounded-lg">
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#ffffff]">
                 {countDownTime?.minutes}
               </span>
 
             </div>
             <span className="text-[#ffffff] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.minutes == 1 ? "Minute" : "Minutes"}
+              {countDownTime?.minutes === 1 ? "Minute" : "Minutes"}
             </span>
           </div>
-          <div className="flex flex-col gap-5 relative">
-            <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-center items-center bg-[#212121] rounded-lg">
+          <div className="flex flex-col relative">
+            <div className="h-10 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-24 flex justify-center items-center rounded-lg">
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#ffffff]">
                 {countDownTime?.seconds}
               </span>
 
             </div>
             <span className="text-[#ffffff] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.seconds == 1 ? "Second" : "Seconds"}
+              {countDownTime?.seconds === 1 ? "Second" : "Seconds"}
             </span>
           </div>
+        </div>
         </div>
       </div>
     </div>

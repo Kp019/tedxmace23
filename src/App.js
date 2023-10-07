@@ -1,21 +1,25 @@
-import About from "./components/About";
-import Hero from "./components/Hero";
-import Navbar from "./components/Navbar"
-import Speakers from "./components/Speakers";
-import Ambassador from "./components/Ambassador";
-import Timer3 from "./components/Counter";
-import Footer from "./components/Footer";
+import React from 'react';
+import {
+  Routes, 
+  Route,
+  BrowserRouter,
+} from "react-router-dom";
+import Home from './pages/Home';
+import Navbar from './components/Navbar'
+import Register_A from './pages/register-ambassador';
 
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Navbar/>
-      <Hero/>
-      <Timer3/>
-      <About/>
-      <Speakers/>
-      <Ambassador/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home/>} />
+      </Routes>
+      <Routes>
+        <Route path='/Register_A' element={<Register_A/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
