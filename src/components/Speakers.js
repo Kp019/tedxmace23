@@ -1,8 +1,8 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import "./speaker.css";
 import kp from '../assets/kp.png';
 import {BsLinkedin} from 'react-icons/bs';
-
+import VanillaTilt from 'vanilla-tilt';
 
 const people = [
     {
@@ -57,7 +57,16 @@ const people = [
 
 
 
-function Speakers() {
+function Speakers() {  
+  useEffect(()=>{
+    VanillaTilt.init(document.querySelectorAll('.speaker-card',{
+      max:5,
+      speed:20,
+      glare: true,
+      'max-glare' : 5,
+   } ))
+  })
+
   return (
     <div id='speakers' className='mx-5 sm:mx-16 lg:mx-48 '>
         <h3 className='flex justify-center text-white text-5xl mb-20 font-bold'>SPEAKERS</h3>

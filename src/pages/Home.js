@@ -15,8 +15,8 @@ function Home() {
       <Hero/>
       <Timer3/>
       <About/>
-      <Speakers/>
       <Ambassador/>
+      <Speakers/>
       <Footer/>
     </div>
   )

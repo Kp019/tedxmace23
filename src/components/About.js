@@ -5,7 +5,7 @@ import "./speaker.css"
 function About() {
   return (
     
-    <div id='about' className='mb-56 about-container about-angled  overflow-hidden text-white '>
+    <div className='mb-56 about-container about-angled  overflow-hidden text-white '>
       <div className='about-gradient '>
       <div className='mx-20 p-20 '>      
         <div className='overflow-hidden px-20 pt-32 mb-20 flex flex-row flex-grow gap-36 rounded-2xl justify-center items-center '>
