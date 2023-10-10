@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Register_A() {
+function RegisterA() {
   return (
     <div id='register'>
         <div className='m-52'>
@@ -13,4 +13,4 @@ function Register_A() {
   )
 }
 
-export default Register_A
+export default RegisterA

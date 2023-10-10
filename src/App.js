@@ -5,7 +5,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import Home from './pages/Home';
-import Register_A from './pages/register-ambassador';
+import RegisterA from './pages/register-ambassador';
 import Preg from './pages/Preg';
 
 function App() {
@@ -13,13 +13,13 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Routes>
-        <Route path='/' element={<Home/>} />
+        <Route path='/' element={<Home />} />
       </Routes>
       <Routes>
-        <Route path='/Register_A' element={<Register_A/>}/>
+        <Route path='/Register_A' element={<RegisterA />} />
       </Routes>
       <Routes>
-        <Route path='/preg' element={<Preg/>}/>
+        <Route path='/preg' element={<Preg />} />
       </Routes>
       </BrowserRouter>
     </div>
