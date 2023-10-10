@@ -68,7 +68,7 @@ const Timer3 = () => {
     <div className="relative counter-angled py-40">
       <div className="counter-grad top-0"></div>
       <div className="relative flex flex-col items-center justify-center w-full h-full  sm:gap-16">
-        <div className="counter-container border-2 border-[#a6a6a6] px-10 pb-8 pt-2 rounded-2xl">
+        <div className="counter-container border-2 border-[#5c5c5c] px-10 pb-8 pt-2 rounded-2xl">
         <div className=" flex justify-center sm:gap-8 ">
           <div className="flex flex-col relative">
             <div className="h-10 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-24 flex justify-center items-center rounded-lg">
